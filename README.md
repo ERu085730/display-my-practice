@@ -1,11 +1,11 @@
 # display-my-practice
 
 ## html/css
--Sassy css(scss) <br />
+-Sassy css(scss) 
 
 ## javascript
--react
--react hook(useState, useEffect)
+-react <br />
+-react hook(useState, useEffect) <br />
 
 
 ## Demo:
