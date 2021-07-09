@@ -1,0 +1,56 @@
+.filter {
+  height: 72rem;
+  position: relative;
+  border-bottom: 1px solid rgba($color-primary, 0.2);
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    padding: 1.5rem 4.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &--1 {
+      background-color: lightcoral;
+    }
+    &--2 {
+      background-color: lightcyan;
+    }
+    &--3 {
+      background-color: lightseagreen;
+    }
+  }
+
+  &__items {
+    display: grid;
+    justify-content: center;
+    padding: 4rem;
+    grid-template-columns: repeat(3, minmax(20rem, 20rem));
+    grid-gap: 3rem;
+  }
+
+  &__item {
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid $color-primary;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

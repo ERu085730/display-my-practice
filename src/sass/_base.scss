@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+// COLOR
+$color-primary: #57606f;
+$color-secondary: #2f3542;
+$color-third: #747f92;
+
+$color-white: #ffffff;
+$color-grey: #f1f2f6;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px  -> 10px/16px = 62.5%
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  position: relative;
+  background-color: $color-grey;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+h2 {
+  padding: 5rem 0;
+  font-size: 4rem;
+  letter-spacing: 0.8rem;
+  text-align: center;
+}
