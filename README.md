@@ -3,13 +3,16 @@
 ## 功能:
 使用react來練習javascript小功能實現的練習網頁
 
-## html/css
+## html/css:
 -Sassy css(scss) 
 
-## javascript
+## javascript:
 -react <br />
 -react hook(useState, useEffect) <br />
 
 
 ## Demo:
 https://display-my-practice.netlify.app/
+
+## github:
+https://github.com/ERu085730/display-my-practice
