@@ -1,6 +1,6 @@
 # display-my-practice
 
-功能:
+## 功能:
 使用react來練習javascript小功能實現的練習網頁
 
 ## html/css
