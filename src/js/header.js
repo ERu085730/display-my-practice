@@ -2,7 +2,6 @@ import { Nav } from "./nav.js";
 import { title__img, title__img__small } from "./image.js";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { wait } from "@testing-library/react";
 
 export function Header() {
   const { ref, inView, entry } = useInView();
