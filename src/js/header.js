@@ -1,8 +1,20 @@
 import { Nav } from "./nav.js";
-// import title__img from "../img/title.jpg";
-import { title__img } from "./image.js";
+import { title__img, title__img__small } from "./image.js";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { wait } from "@testing-library/react";
 
 export function Header() {
+  const { ref, inView, entry } = useInView();
+  useEffect(() => {
+    if (inView) {
+      entry.target.src = entry.target.dataset.src;
+      const timer = setTimeout(function () {
+        entry.target.classList.remove("img--lazy");
+      }, 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [inView, entry]);
   return (
     <div className="header">
       <div className="header__nav">
@@ -13,7 +25,13 @@ export function Header() {
         <h1>
           Display My <span>Practice</span>
         </h1>
-        <img src={title__img} alt="title" />
+        <img
+          className="img--lazy"
+          ref={ref}
+          src={title__img__small}
+          data-src={title__img}
+          alt="title"
+        />
       </div>
     </div>
   );

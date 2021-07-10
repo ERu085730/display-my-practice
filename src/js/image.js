@@ -7,6 +7,7 @@ import sea_3 from "../img/sea-3.jpg";
 import mountain_1 from "../img/mountain-1.jpg";
 import mountain_2 from "../img/mountain-2.jpg";
 import mountain_3 from "../img/mountain-3.jpg";
+import title__img__small from "../img/title-small.jpg";
 import title__img from "../img/title.jpg";
 
 export {
@@ -20,4 +21,5 @@ export {
   mountain_2,
   mountain_3,
   title__img,
+  title__img__small,
 };
